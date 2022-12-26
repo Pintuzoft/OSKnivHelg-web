@@ -69,7 +69,9 @@ echo "      </div>\n";
 echo "    </div>\n";
 
 echo "    <div id='right' class='container-sm'>\n";
-
+echo "       <div id='right-content'>\n";
+echo "          <p>hello</p>\n";
+echo "       </div>\n";
 echo "    </div>\n";
 
 /* FOOTER */ 
