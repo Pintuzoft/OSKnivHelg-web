@@ -11,6 +11,9 @@ class MySQL {
 
     public function __construct($host, $user, $password, $database) {
         $this->connection = new mysqli($host, $user, $password, $database) or die("Error " . mysqli_error($this->mysqli));
+        if ( $this->connection->connect_errno ) {
+            die("Failed to connect to MySQL: (" . $this->connection->connect_errno . ") " . $this->connection->connect_error);
+        }
         return $this;
     }
 
