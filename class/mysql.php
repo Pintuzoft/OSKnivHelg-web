@@ -23,6 +23,10 @@ class MySQL {
     public function prepare($query) {
         return $this->mysqli->prepare($query);
     }
+
+    public function execute() {
+        return $this->mysqli->execute();
+    }
 }
 
 ?>
