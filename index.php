@@ -30,7 +30,7 @@ echo "  </head>\n";
 echo "  <body>\n";
 
 /* HEADER */
-echo "    <div id='header'>\n";
+echo "    <div id='header' class='container-fluid'>\n";
 echo "      <div id='logo'>\n";
 echo "        <a href='index.php'><img src='images/logo.png' alt='My Logo' /></a>\n";
 echo "      </div>\n";
@@ -39,7 +39,7 @@ echo "    </div>\n";
 
 
 /* CONTENT */
-echo "    <div id='content'>\n";
+echo "    <div id='content' class='container-fluid'>\n";
 echo "      <table id='eventlist' class='table table-striped table-bordered' style='width:100%'>\n";
 
 echo "        <thead>\n";
