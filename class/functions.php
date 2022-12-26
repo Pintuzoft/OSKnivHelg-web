@@ -9,17 +9,17 @@ function getEventList ( ) {
     $stmt = $mysql->prepare ( $query ) or die ( "Error: " . $mysql->getError ( ) );
     $stmt->execute ( ) or die ( "Error: " . $mysql->getError ( ) );
     $stmt->store_result ( );
-    $stmt->bind_result ( $time, $attacker, $attackerid, $victim, $victimid, $points );
+    $stmt->bind_result ( $stamp, $attacker, $attackerid, $victim, $victimid, $points );
     while ( $stmt->fetch ( ) ) { 
         echo "Event:";
-        echo " - Time: " . $time;
+        echo " - Time: " . $stamp;
         echo " - Attacker: " . $attacker;
         echo " - AttackerID: " . $attackerid;
         echo " - Victim: " . $victim;
         echo " - VictimID: " . $victimid;
         echo " - Points: " . $points;
 
-        $eList->add ( new Event ( $time, $attacker, $attackerid, $victim, $victimid, $points ) );
+        $eList->add ( new Event ( $stamp, $attacker, $attackerid, $victim, $victimid, $points ) );
     }
     return $eList;
 }
