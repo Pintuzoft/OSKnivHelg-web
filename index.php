@@ -54,6 +54,7 @@ echo "        </thead>\n";
 echo "        <tbody>\n";
 
 $eList = getEventList();
+echo "number of events: " . $eList->size() . "\n";
 foreach ( $eList as $event ) {
     echo "          <tr>\n";
     echo "            <td>" . $event->getTime ( ) . "</td>\n";
