@@ -2,11 +2,11 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 'On');
 
-include_once 'config.php';
-include_once 'mysql.php';
-include_once 'functions.php';
-include_once 'event.php';
-include_once 'user.php';
+include_once 'class/config.php';
+include_once 'class/mysql.php';
+include_once 'class/functions.php';
+include_once 'class/event.php';
+include_once 'class/user.php';
 
 $mysql = new MySQL($mysql_host, $mysql_user, $mysql_password, $mysql_database);
 
