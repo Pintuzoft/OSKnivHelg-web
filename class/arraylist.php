@@ -44,6 +44,11 @@ class ArrayList {
     public function toArray() {
         return $this->array;
     }
+
+    public function getArray() {
+        return $this->array;
+    }
+
 }
 
 ?>
