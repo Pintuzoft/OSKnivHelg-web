@@ -4,6 +4,7 @@ ini_set('display_errors', 'On');
 
 include_once 'class/config.php';
 include_once 'class/mysql.php';
+include_once 'class/arraylist.php';
 include_once 'class/functions.php';
 include_once 'class/event.php';
 include_once 'class/user.php';
