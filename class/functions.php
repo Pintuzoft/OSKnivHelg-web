@@ -11,13 +11,6 @@ function getEventList ( ) {
     $stmt->store_result ( );
     $stmt->bind_result ( $stamp, $attacker, $attackerid, $victim, $victimid, $points ) or die ( "Error: " . $mysql->getError ( ) );
     while ( $stmt->fetch ( ) ) {
-        echo "Stamp: $stamp\n";
-        echo "Attacker: $attacker\n";
-        echo "Attacker ID: $attackerid\n";
-        echo "Victim: $victim\n";
-        echo "Victim ID: $victimid\n";
-        echo "Points: $points\n";
-        
         $eList->add ( new Event ( $stamp, $attacker, $attackerid, $victim, $victimid, $points ) );
     }
     return $eList;

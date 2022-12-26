@@ -35,14 +35,6 @@ echo "      <div id='logo'>\n";
 echo "        <a href='index.php'><img src='images/logo.png' alt='My Logo' /></a>\n";
 echo "      </div>\n";
 
-echo "      <div id='menu'>\n";
-echo "        <ul>\n";
-echo "          <li><a href='index.php'>Home</a></li>\n";
-echo "          <li><a href='about.php'>About</a></li>\n";    
-echo "          <li><a href='contact.php'>Contact</a></li>\n";
-echo "        </ul>\n";
-echo "      </div>\n";
-
 echo "    </div>\n";
 
 
@@ -64,10 +56,10 @@ echo "        <tbody>\n";
 $eList = getEventList();
 foreach ( $eList as $event ) {
     echo "          <tr>\n";
-    echo "            <td>" . $eList->getTime ( ) . "</td>\n";
-    echo "            <td>" . $eList->getAttacker ( ) . "</td>\n";
-    echo "            <td>" . $eList->getVictim ( ) . "</td>\n";
-    echo "            <td>" . $eList->getPoints ( ) . "</td>\n";
+    echo "            <td>" . $event->getTime ( ) . "</td>\n";
+    echo "            <td>" . $event->getAttacker ( ) . "</td>\n";
+    echo "            <td>" . $event->getVictim ( ) . "</td>\n";
+    echo "            <td>" . $event->getPoints ( ) . "</td>\n";
     echo "          </tr>\n";
 }
 
