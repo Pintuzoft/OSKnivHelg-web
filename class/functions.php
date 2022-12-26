@@ -7,7 +7,7 @@ function getEventList ( ) {
     $eList = new ArrayList ( );
     $query = "SELECT * FROM event ORDER BY time DESC";
     $stmt = $mysql->prepare ( $query );
-    $stmt->execute ( );
+    $stmt->execute ( ) or die ( "Error: " . $mysql->getError ( ) );
     $stmt->store_result ( );
     $stmt->bind_result ( $time, $attacker, $attackerid, $victim, $victimid, $points );
     while ( $stmt->fetch ( ) ) { 
