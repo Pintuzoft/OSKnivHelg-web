@@ -7,8 +7,9 @@ function getEventList ( ) {
     $query = "SELECT * FROM event ORDER BY time DESC";
     $stmt = $mysql->prepare($query);
     $stmt->execute();
-    while ($row = $stmt->fetch()) {
-        $eList->add(new Event($row['time'], $row['attacker'], $row['victim'], $row['points']));
+    $stmt->bind_result($time, $attacker, $attackerid, $victim, $victimid, $points);
+    while ( $stmt->fetch()) {
+        $eList->add(new Event($time,$attacker,$attackerid,$victim,$victimid,points));
     }
     return $eList;
 }
