@@ -4,7 +4,7 @@ class MySQL {
     private $mysqli;
 
     public function __construct($host, $user, $password, $database) {
-        $this->mysqli = new mysqli($host, $user, $password, $database);
+        $this->mysqli = new mysqli($host, $user, $password, $database) or die("Error " . mysqli_error($this->mysqli));
         return $this;
     }
 
