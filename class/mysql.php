@@ -7,11 +7,6 @@ class MySQL {
 
     public function __construct($host, $user, $password, $database) {
         $this->connection = new mysqli($host, $user, $password, $database) or die("Error " . mysqli_error($this->mysqli));
-        if ( $this->connection === false ) {
-            echo "no connection";
-        } else {
-            echo "connection";
-        }
         return $this;
     }
 
