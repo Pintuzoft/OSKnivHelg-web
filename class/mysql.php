@@ -6,10 +6,11 @@ class MySQL {
     private $connection;
 
     public function __construct($host, $user, $password, $database) {
-        echo "HERE!!!!!!!!!!!!!";
         $this->connection = new mysqli($host, $user, $password, $database) or die("Error " . mysqli_error($this->mysqli));
-        if ( $this->connection->connect_errno ) {
-            die("Failed to connect to MySQL: (" . $this->connection->connect_errno . ") " . $this->connection->connect_error);
+        if ( $this->connection === false ) {
+            echo "no connection";
+        } else {
+            echo "connection";
         }
         return $this;
     }
