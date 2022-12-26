@@ -39,7 +39,7 @@ echo "    </div>\n";
 
 
 /* CONTENT */
-echo "    <div id='content' class='container-sm'>\n";
+echo "    <div id='content' class='container-xs'>\n";
 echo "      <table id='eventlist' class='table table-striped table-bordered' style='width:100%'>\n";
 
 echo "        <thead>\n";
