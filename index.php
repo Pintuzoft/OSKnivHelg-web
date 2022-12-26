@@ -55,7 +55,7 @@ echo "        <tbody>\n";
 
 $eList = getEventList();
 echo "number of events: " . $eList->size() . "\n";
-foreach ( $eList as $event ) {
+foreach ( $eList as $num => $event ) {
     echo "          <tr>\n";
     echo "            <td>" . $event->getTime ( ) . "</td>\n";
     echo "            <td>" . $event->getAttacker ( ) . "</td>\n";
