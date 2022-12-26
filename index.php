@@ -10,7 +10,7 @@ include_once 'class/functions.php';
 include_once 'class/event.php';
 include_once 'class/user.php';
 
-$mysql = new MySQL($mysql_host, $mysql_user, $mysql_password, $mysql_database);
+
 
 echo "<html>\n";
 

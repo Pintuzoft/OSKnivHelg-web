@@ -1,5 +1,7 @@
 <?php
 
+$mysql = new MySQL($mysql_host, $mysql_user, $mysql_password, $mysql_database);
+
 class MySQL {
     private $connection;
 
