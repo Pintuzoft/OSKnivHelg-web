@@ -5,6 +5,7 @@ class MySQL {
 
     public function __construct($host, $user, $password, $database) {
         $this->mysqli = new mysqli($host, $user, $password, $database);
+        return $this;
     }
 
     public function query($query) {
