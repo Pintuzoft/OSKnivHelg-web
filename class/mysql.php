@@ -1,4 +1,8 @@
 <?php
+echo "$mysql_host";
+echo "$mysql_database";
+echo "$mysql_user";
+echo "$mysql_password";
 
 $mysql = new MySQL($mysql_host, $mysql_user, $mysql_password, $mysql_database);
 
