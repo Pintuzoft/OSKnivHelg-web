@@ -1,27 +1,31 @@
 <?php
 
 class MySQL {
-    private $mysqli;
+    private $connection;
 
     public function __construct($host, $user, $password, $database) {
-        $this->mysqli = new mysqli($host, $user, $password, $database) or die("Error " . mysqli_error($this->mysqli));
+        $this->connection = new mysqli($host, $user, $password, $database) or die("Error " . mysqli_error($this->mysqli));
         return $this;
     }
 
     public function query($query) {
-        return $this->mysqli->query($query);
+        return $this->connection->query($query);
     }
 
     public function escape($string) {
-        return $this->mysqli->real_escape_string($string);
+        return $this->connection->real_escape_string($string);
     }
 
     public function getError() {
-        return $this->mysqli->error;
+        return $this->connection->error;
     }
 
     public function prepare($query) {
-        return $this->mysqli->prepare($query);
+        return $this->connection->prepare($query);
+    }
+
+    public function __destruct() {
+        $this->connection->close();
     }
 
 }
