@@ -52,7 +52,7 @@ echo "                      <th>Victim</th>\n";
 echo "                  </tr>\n";
 echo "              </thead>\n";
 
-echo "          <tbody>\n";
+echo "              <tbody>\n";
 
 $eList = getEventList();
 foreach ( $eList->getArray() as $event ) {
@@ -64,7 +64,7 @@ foreach ( $eList->getArray() as $event ) {
 }
 
 echo "              </tbody>\n";
-
+echo "          </table>\n";
 echo "        </div>\n";
 
 echo "        <div id='content-right' class='col col-5 sidebar'>\n";
