@@ -40,14 +40,19 @@ echo "    </div>\n";
 
 /* CONTENT LEFT*/
 echo "    <div id='content' class='container-fluid'>\n";
-echo "      <div id='content-left' class='col-md-3'>\n";
 
-echo "      </div>\n";
+echo "      <div id='content-main' class='row'>\n";
+
+echo "          <div id='content-left' class='col-md-3'>\n";
+
+echo "          </div>\n";
 
 /* CONTENT RIGHT */
-echo "      <div id='content-right' class='col-md-9'>\n";
+echo "          <div id='content-right' class='col-md-9'>\n";
 
 
+
+echo "          </div>\n";
 
 echo "      </div>\n";
 
