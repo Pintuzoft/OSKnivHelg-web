@@ -40,7 +40,7 @@ echo "    </div>\n";
 
 /* CONTENT LEFT*/
 echo "    <div id='content' class='container-fluid'>\n";
-echo "       <div id='content-main' class='container-sm row'>\n";
+echo "       <div id='content-main' class='container row'>\n";
 echo "         <div id='content-left' class='col col-4'>\n";
 echo "          <table id='eventlist' class='table table-striped table-bordered'>\n";
 
