@@ -39,8 +39,8 @@ echo "    </div>\n";
 
 
 /* CONTENT LEFT*/
-echo "    <div id='content' class='container-fluid row'>\n";
-echo "       <div id='content-left' class='col col-6 container-sm'>\n";
+echo "    <div id='content' class='container-sm row'>\n";
+echo "       <div id='content-left' class='col col-6'>\n";
 echo "          <table id='eventlist' class='table table-striped table-bordered'>\n";
 
 echo "              <thead>\n";
@@ -69,9 +69,9 @@ echo "      </div>\n";
 echo "    </div>\n";
 
 echo "      <div id='content-right' class='col col-3 sidebar'>\n";
-echo "       <div id='right-content'>\n";
+echo "        <div id='right-content'>\n";
 echo "          <p>hello</p>\n";
-echo "       </div>\n";
+echo "        </div>\n";
 echo "    </div>\n";
 
 /* FOOTER */ 
