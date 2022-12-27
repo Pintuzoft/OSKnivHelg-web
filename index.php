@@ -39,8 +39,9 @@ echo "    </div>\n";
 
 
 /* CONTENT LEFT*/
-echo "    <div id='content' class='container-sm row'>\n";
-echo "       <div id='content-left' class='col col-6'>\n";
+echo "    <div id='content' class='container-fluid row'>\n";
+echo "       <div id='content-left' class='container-sm'>\n";
+echo "         <div id='content-left' class='col col-6'>\n";
 echo "          <table id='eventlist' class='table table-striped table-bordered'>\n";
 
 echo "              <thead>\n";
@@ -65,6 +66,7 @@ foreach ( $eList->getArray() as $event ) {
 
 echo "              </tbody>\n";
 
+echo "        </div>\n";
 echo "      </div>\n";
 echo "    </div>\n";
 
