@@ -58,11 +58,11 @@ echo "              </thead>\n";
 echo "              <tbody>\n";
 
 $eList = getEventList ( );
-foreach ( $eList as $e ) {
+foreach ( $eList as $event ) {
   echo "                <tr>\n";
-  echo "                  <td>" . $e->getEventTime() . "</td>\n";
-  echo "                  <td>" . $e->getAttacker() . "</td>\n";
-  echo "                  <td>" . $e->getVictim() . "</td>\n";
+  echo "                  <td>".$event->getEventTime()."</td>\n";
+  echo "                  <td>".$event->getAttacker()." [+".$event->getPoints()."p]</td>\n";
+  echo "                  <td>".$event->getVictim()." [-".$event->getPoints()."p]</td>\n";
   echo "                </tr>\n";
 }
 
