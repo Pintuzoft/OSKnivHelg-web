@@ -20,7 +20,7 @@ function getEventList ( ) {
 function getUserListSorted ( ) {
     global $mysql;
     $uList = new ArrayList ( );
-    $query = "SELECT steamid,name,points FROM user ORDER BY points DESC";
+    $query = "SELECT steamid,name,points FROM userstats ORDER BY points DESC";
     $stmt = $mysql->prepare ( $query ) or die ( "Error: " . $mysql->getError ( ) );
     $stmt->execute ( ) or die ( "Error: " . $mysql->getError ( ) );
     $stmt->store_result ( );
