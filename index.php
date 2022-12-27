@@ -44,7 +44,7 @@ echo "    <div id='content' class='container-fluid'>\n";
 echo "      <div id='content-main' class='container'>\n";
 echo "        <div id='content-main-inner' class='row'>\n";
 echo "          <div id='content-left' class='col col-6'>\n";
-
+echo "            <h2>Senaste händelserna</h2>\n";
 echo "             <table id='eventlist' class='table table-striped table-bordered'>\n";
 
 echo "              <thead>\n";
@@ -72,7 +72,7 @@ echo "          </div>\n";
 
 /* CONTENT RIGHT */
 echo "          <div id='content-right' class='col col-4'>\n";
-
+echo "            <h2>Topplista</h2>\n";
 echo "            <table id='userlist' class='table table-striped table-bordered'>\n";
 
 echo "              <thead>\n";
