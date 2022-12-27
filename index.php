@@ -58,6 +58,7 @@ echo "              </thead>\n";
 echo "              <tbody>\n";
 
 $eList = getEventList ( );
+echo "Number of events: ".count($eList)."\n";
 foreach ( $eList as $event ) {
   echo "                <tr>\n";
   echo "                  <td>".$event->getEventTime()."</td>\n";
