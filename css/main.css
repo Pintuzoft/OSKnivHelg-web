@@ -3,9 +3,9 @@
     font: 12px/1.5 Arial, Helvetica, sans-serif;
 }
 
-.content-left {
+#content-left {
     background-color: #26502d;
 }
-.content-right {
+#content-right {
     background-color: #662b3c;
 }
