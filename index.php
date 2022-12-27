@@ -43,7 +43,7 @@ echo "    <div id='content' class='container-fluid'>\n";
 
 echo "      <div id='content-main' class='container'>\n";
 echo "        <div id='content-main-inner' class='row'>\n";
-echo "          <div id='content-left' class='col col-8'>\n";
+echo "          <div id='content-left' class='col col-6'>\n";
 echo "            <p>left!</p>\n";
 echo "          </div>\n";
 
