@@ -7,15 +7,15 @@
 */
 
 class Event {
-    private $time;
+    private $stamp;
     private $attacker;
     private $attackerid;
     private $victim;
     private $victimid;
     private $points;
 
-    public function __construct($time, $attacker, $attackerid, $victim, $victimid, $points) {
-        $this->time = $time;
+    public function __construct($stamp, $attacker, $attackerid, $victim, $victimid, $points) {
+        $this->stamp = $stamp;
         $this->attacker = $attacker;
         $this->attackerid = $attackerid;
         $this->victim = $victim;
@@ -23,8 +23,8 @@ class Event {
         $this->points = $points;
     }
 
-    public function getTime() {
-        return $this->time;
+    public function getStamp() {
+        return $this->stamp;
     }
 
     public function getAttacker() {
