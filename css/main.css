@@ -3,3 +3,7 @@
     font: 12px/1.5 Arial, Helvetica, sans-serif;
 }
  
+body {
+    background: rgb(32, 26, 26);
+    color: rgb(207, 207, 207);
+}
