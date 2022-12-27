@@ -70,7 +70,7 @@ echo "        </div>\n";
 echo "      </div>\n";
 echo "    </div>\n";
 
-echo "      <div id='content-right' class='col col-2 sidebar'>\n";
+echo "      <div id='content-right' class='row col col-5 sidebar'>\n";
 echo "        <div id='right-content'>\n";
 echo "          <p>hello</p>\n";
 echo "        </div>\n";
