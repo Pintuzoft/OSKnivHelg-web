@@ -34,7 +34,7 @@ echo "    <div id='header' class='container-fluid'>\n";
 echo "      <div id='logo'>\n";
 echo "        <a href='index.php'><img src='images/logo.png' alt='My Logo' /></a>\n";
 echo "      </div>\n";
-
+echo "      <h1>Knivhelg - Kniva en Admin!</h1>\n";
 echo "    </div>\n";
 
 
