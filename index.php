@@ -74,7 +74,7 @@ echo "          </div>\n";
 echo "          <div id='content-right' class='col col-4'>\n";
 
 echo "            <table id='userlist' class='table table-striped table-bordered'>\n";
-6867
+
 echo "              <thead>\n";
 echo "                <tr>\n";
 echo "                  <th>Rank</th>\n";
