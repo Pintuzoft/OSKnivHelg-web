@@ -48,7 +48,7 @@ echo "            <p>left!</p>\n";
 echo "          </div>\n";
 
 /* CONTENT RIGHT */
-echo "          <div id='content-right' class='col'>\n";
+echo "          <div id='content-right' class='col col-3'>\n";
 
 echo "            <p>right!</p>\n";
 
