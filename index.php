@@ -41,16 +41,19 @@ echo "    </div>\n";
 echo "    <div id='content' class='container-fluid'>\n";
 echo "      <div id='content-main' class='container'>\n";
 echo "        <h1>Knivhelg - Kniva en Admin!</h1>\n";
-echo "         <p>Regler:</p>\n";
-echo "         <ul>\n";
-echo "           <li>10p - kniva en admin</li>\n";
-echo "           <li>5p - kniva en H.A (Help Admin)</li>\n";
-echo "           <li>3p - kniva en medlem (ställ in steamid på hemsidan under din profil)</li>\n";
-echo "           <li>1p - kniva/knivad av en random (regga dig på hemsidan och ställ in steamid under din profil)</li>\n";
-echo "         </ul>\n";
 
 echo "        <div id='content-main-inner' class='row'>\n";
-echo "          <div id='content-left' class='col col-6'>\n";
+echo "          <div id='content-left' class='col col-2'>\n";
+echo "              <p>Regler:</p>\n";
+echo "              <ul>\n";
+echo "                  <li>10p - kniva en admin</li>\n";
+echo "                  <li>5p - kniva en H.A (Help Admin)</li>\n";
+echo "                  <li>3p - kniva en medlem (ställ in steamid på hemsidan under din profil)</li>\n";
+echo "                  <li>1p - kniva/knivad av en random (regga dig på hemsidan och ställ in steamid under din profil)</li>\n";
+echo "              </ul>\n";
+echo "          </div>\n";
+
+echo "          <div id='content-middle' class='col col-6'>\n";
 echo "            <h2>Senaste händelserna</h2>\n";
 echo "             <table id='eventlist' class='table table-striped table-bordered'>\n";
 
