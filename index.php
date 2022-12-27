@@ -53,7 +53,7 @@ echo "                  <li>1p - kniva/knivad av en random (regga dig på hemsid
 echo "              </ul>\n";
 echo "          </div>\n";
 
-echo "          <div id='content-middle' class='col col-6'>\n";
+echo "          <div id='content-middle' class='col col-5'>\n";
 echo "            <h2>Senaste händelserna</h2>\n";
 echo "             <table id='eventlist' class='table table-striped table-bordered'>\n";
 
