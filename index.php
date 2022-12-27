@@ -86,9 +86,10 @@ echo "              </thead>\n";
 echo "              <tbody>\n";
 
 $uList = getUserListSorted ( );
+$index = 0;
 foreach ( $uList->getArray() as $user ) {
     echo "                <tr>\n";
-    echo "                  <td>#".$user->getRank()."</td>\n";
+    echo "                  <td>#".++$index."</td>\n";
     echo "                  <td>".$user->getName()."</td>\n";
     echo "                  <td>".$user->getPoints()."</td>\n";
     echo "                </tr>\n";
