@@ -41,8 +41,8 @@ echo "    </div>\n";
 /* CONTENT LEFT*/
 echo "    <div id='content' class='container-fluid'>\n";
 
-echo "      <div id='content-main' class='row'>\n";
-
+echo "      <div id='content-main' class='container'>\n";
+echo "        <div id='content-main-inner' class='row'>\n";
 echo "          <div id='content-left' class='col-md-3'>\n";
 echo "            <p>left!</p>\n";
 echo "          </div>\n";
@@ -54,7 +54,7 @@ echo "            <p>right!</p>\n";
 
 
 echo "          </div>\n";
-
+echo "        </div>\n";
 echo "      </div>\n";
 
 echo "    </div>\n";
