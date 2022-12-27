@@ -58,8 +58,7 @@ echo "              </thead>\n";
 echo "              <tbody>\n";
 
 $eList = getEventList ( );
-echo "Number of events: ".count($eList)."\n";
-foreach ( $eList as $event ) {
+foreach ( $eList->getArray() as $event ) {
   echo "                <tr>\n";
   echo "                  <td>".$event->getEventTime()."</td>\n";
   echo "                  <td>".$event->getAttacker()." [+".$event->getPoints()."p]</td>\n";
