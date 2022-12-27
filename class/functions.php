@@ -20,13 +20,13 @@ function getEventList ( ) {
 function getUserListSorted ( ) {
     global $mysql;
     $uList = new ArrayList ( );
-    $query = "SELECT id,name,points FROM user ORDER BY points DESC";
+    $query = "SELECT steamid,name,points FROM user ORDER BY points DESC";
     $stmt = $mysql->prepare ( $query ) or die ( "Error: " . $mysql->getError ( ) );
     $stmt->execute ( ) or die ( "Error: " . $mysql->getError ( ) );
     $stmt->store_result ( );
-    $stmt->bind_result ( $id, $name, $points ) or die ( "Error: " . $mysql->getError ( ) );
+    $stmt->bind_result ( $steamid, $name, $points ) or die ( "Error: " . $mysql->getError ( ) );
     while ( $stmt->fetch ( ) ) {
-        $uList->add ( new User ( $id, $name, $points ) );
+        $uList->add ( new User ( $steamid, $name, $points ) );
     }
     return $uList;
 }
