@@ -45,7 +45,7 @@ echo "      <div id='content-main' class='container'>\n";
 echo "        <div id='content-main-inner' class='row'>\n";
 echo "          <div id='content-left' class='col col-6'>\n";
 
-echo "             <table id='eventlist' class='table table-striped table-bordered' style='width:100%'>\n";
+echo "             <table id='eventlist' class='table table-striped table-bordered'>\n";
 
 echo "              <thead>\n";
 echo "                <tr>\n";
