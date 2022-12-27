@@ -16,4 +16,19 @@ function getEventList ( ) {
     return $eList;
 }
 
+
+function getUserListSorted ( ) {
+    global $mysql;
+    $uList = new ArrayList ( );
+    $query = "SELECT id,name,points FROM user ORDER BY points DESC";
+    $stmt = $mysql->prepare ( $query ) or die ( "Error: " . $mysql->getError ( ) );
+    $stmt->execute ( ) or die ( "Error: " . $mysql->getError ( ) );
+    $stmt->store_result ( );
+    $stmt->bind_result ( $id, $name, $points ) or die ( "Error: " . $mysql->getError ( ) );
+    while ( $stmt->fetch ( ) ) {
+        $uList->add ( new User ( $id, $name, $points ) );
+    }
+    return $uList;
+}
+
 ?>

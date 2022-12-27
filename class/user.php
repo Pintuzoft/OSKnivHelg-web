@@ -7,10 +7,12 @@
 class User {
     private $steamid;
     private $name;
+    private $points;
 
-    public function __construct($steamid, $name) {
+    public function __construct($steamid, $name, $points) {
         $this->steamid = $steamid;
         $this->name = $name;
+        $this->points = $points;
     }
 
     public function getSteamid() {
@@ -21,6 +23,10 @@ class User {
         return $this->name;
     }
 
+    public function getPoints() {
+        return $this->points;
+    }
+    
     public function matchSteamID ( $in_steamID ) {
         if ( strcmp ( $this->steamid, $in_steamID ) == 0 ) {
             return true;
