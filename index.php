@@ -44,7 +44,7 @@ echo "        <h1>Knivhelg - Kniva en Admin!</h1>\n";
 
 echo "        <div id='content-main-inner' class='row'>\n";
 echo "          <div id='content-left' class='col col-2'>\n";
-echo "              <p>Regler:</p>\n";
+echo "              <h2>Regler:</h2>\n";
 echo "              <ul>\n";
 echo "                  <li>10p - kniva en admin</li>\n";
 echo "                  <li>5p - kniva en H.A (Help Admin)</li>\n";
