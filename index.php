@@ -39,9 +39,8 @@ echo "    </div>\n";
 
 /* CONTENT LEFT*/
 echo "    <div id='content' class='container-fluid'>\n";
-echo "      <h1>Knivhelg - Kniva en Admin!</h1>\n";
-
 echo "      <div id='content-main' class='container'>\n";
+echo "        <h1>Knivhelg - Kniva en Admin!</h1>\n";
 echo "        <div id='content-main-inner' class='row'>\n";
 echo "          <div id='content-left' class='col col-6'>\n";
 echo "            <h2>Senaste händelserna</h2>\n";
