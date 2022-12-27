@@ -59,24 +59,43 @@ echo "              <tbody>\n";
 
 $eList = getEventList ( );
 foreach ( $eList->getArray() as $event ) {
-  echo "                <tr>\n";
-  echo "                  <td>".$event->getStamp()."</td>\n";
-  echo "                  <td>".$event->getAttacker()." [+".$event->getPoints()."p]</td>\n";
-  echo "                  <td>".$event->getVictim()." [-".$event->getPoints()."p]</td>\n";
-  echo "                </tr>\n";
+    echo "                <tr>\n";
+    echo "                  <td>".$event->getStamp()."</td>\n";
+    echo "                  <td>".$event->getAttacker()." [+".$event->getPoints()."p]</td>\n";
+    echo "                  <td>".$event->getVictim()." [-".$event->getPoints()."p]</td>\n";
+    echo "                </tr>\n";
 }
 
 echo "              </tbody>\n";
-
 echo "            </table>\n";
-
 echo "          </div>\n";
 
 /* CONTENT RIGHT */
 echo "          <div id='content-right' class='col col-4'>\n";
 
-echo "            <p>right!</p>\n";
+echo "            <table id='userlist' class='table table-striped table-bordered'>\n";
 
+echo "              <thead>\n";
+echo "                <tr>\n";
+echo "                  <th>Rank</th>\n";
+echo "                  <th>Name</th>\n";
+echo "                  <th>Points</th>\n";
+echo "                </tr>\n";
+echo "              </thead>\n";
+
+echo "              <tbody>\n";
+
+$uList = getUserList ( );
+foreach ( $uList->getArray() as $user ) {
+    echo "                <tr>\n";
+    echo "                  <td>#".$user->getRank()."</td>\n";
+    echo "                  <td>".$user->getName()."</td>\n";
+    echo "                  <td>".$user->getPoints()."</td>\n";
+    echo "                </tr>\n";
+}
+
+echo "              </tbody>\n";
+echo "            </table>\n";
 
 echo "          </div>\n";
 echo "        </div>\n";
