@@ -60,7 +60,7 @@ echo "              <tbody>\n";
 $eList = getEventList ( );
 foreach ( $eList->getArray() as $event ) {
   echo "                <tr>\n";
-  echo "                  <td>".$event->getEventTime()."</td>\n";
+  echo "                  <td>".$event->getStamp()."</td>\n";
   echo "                  <td>".$event->getAttacker()." [+".$event->getPoints()."p]</td>\n";
   echo "                  <td>".$event->getVictim()." [-".$event->getPoints()."p]</td>\n";
   echo "                </tr>\n";
