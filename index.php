@@ -46,7 +46,7 @@ echo "         <ul>\n";
 echo "           <li>10p - kniva en admin</li>\n";
 echo "           <li>5p - kniva en H.A (Help Admin)</li>\n";
 echo "           <li>3p - kniva en medlem (ställ in steamid på hemsidan)</li>\n";
-echo "           <li>1p - kniva en random</li>\n";
+echo "           <li>1p - kniva/knivad av en random</li>\n";
 echo "         </ul>\n";
 
 echo "        <div id='content-main-inner' class='row'>\n";
