@@ -44,7 +44,32 @@ echo "    <div id='content' class='container-fluid'>\n";
 echo "      <div id='content-main' class='container'>\n";
 echo "        <div id='content-main-inner' class='row'>\n";
 echo "          <div id='content-left' class='col col-6'>\n";
-echo "            <p>left!</p>\n";
+
+echo "             <table id='eventlist' class='table table-striped table-bordered' style='width:100%'>\n";
+
+echo "              <thead>\n";
+echo "                <tr>\n";
+echo "                  <th>Time</th>\n";
+echo "                  <th>Attacker</th>\n";
+echo "                  <th>Victim</th>\n";
+echo "                </tr>\n";
+echo "              </thead>\n";
+
+echo "              <tbody>\n";
+
+$eList = getEventList ( );
+foreach ( $eList as $e ) {
+  echo "                <tr>\n";
+  echo "                  <td>" . $e->getEventTime() . "</td>\n";
+  echo "                  <td>" . $e->getAttacker() . "</td>\n";
+  echo "                  <td>" . $e->getVictim() . "</td>\n";
+  echo "                </tr>\n";
+}
+
+echo "              </tbody>\n";
+
+echo "            </table>\n";
+
 echo "          </div>\n";
 
 /* CONTENT RIGHT */
