@@ -25,7 +25,7 @@ echo "    <link rel='stylesheet' type='text/css' href='https://cdn.datatables.ne
 
 echo "  </head>\n";
 
-echo "  <body style='background-color:#282828'>\n";
+echo "  <body style='background-color:#282828; color:#EFEFEF'>\n";
 
 /* HEADER */
 echo "    <div id='header' class='container-fluid'>\n";
@@ -51,7 +51,7 @@ echo "          </div>\n";
 
 echo "          <div id='content-middle' class='col col-5'>\n";
 echo "            <h2>Senaste händelserna</h2>\n";
-echo "             <table id='eventlist' class='table table-striped table-bordered'>\n";
+echo "             <table id='eventlist' class='table table-dark table-striped table-bordered'>\n";
 
 echo "              <thead>\n";
 echo "                <tr>\n";
@@ -79,7 +79,7 @@ echo "          </div>\n";
 /* CONTENT RIGHT */
 echo "          <div id='content-right' class='col col-4'>\n";
 echo "            <h2>Topplista</h2>\n";
-echo "            <table id='userlist' class='table table-striped table-bordered'>\n";
+echo "            <table id='userlist' class='table table-dark table-striped table-bordered'>\n";
 
 echo "              <thead>\n";
 echo "                <tr>\n";
