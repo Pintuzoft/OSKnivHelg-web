@@ -1,11 +1,13 @@
 * {
     margin: 2px;
-    font: 12px/1.5 Arial, Helvetica, sans-serif;
-    border: 1px dashed red;
+    font: 12px/1.5 sans-serif;
 }
  
 body {
     background-color: #333333;
     color: #EFEFEF;
+}
+h2 {
+    color: #fbb204;
 }
 
