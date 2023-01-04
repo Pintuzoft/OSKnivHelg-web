@@ -15,11 +15,9 @@ echo "<html>\n";
 echo "  <head>\n";
 echo "    <title>My Title</title>\n";
 echo "    <link rel='stylesheet' type='text/css' href='css/default.css'>\n";
-//echo "    <script type='text/javascript' src='js/jquery.js'></script>\n";
 
 /* JQUERY */
 echo "    <script src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous'></script>\n";
-
 
 /* METAREFRESH */
 echo "    <meta http-equiv='refresh' content='60'>\n";
@@ -131,14 +129,6 @@ echo "              </tbody>\n";
 echo "            </table>\n";
 echo "          </div>\n";
 
-
-
-
-
-
-
-
-
 /* CONTENT RIGHT */
 echo "          <div id='content-right' class='col col-3'>\n";
 echo "            <h4>Topplista</h4>\n";
@@ -186,8 +176,8 @@ echo "    <script type='text/javascript' src='https://cdn.datatables.net/1.13.1/
 echo "    <script type='text/javascript'>\n";
 echo "            $(document).ready(function() {\n";
 echo "              $('#eventlist').DataTable({\n";
-echo "                'paging': false,\n";
-echo "                'searching': false,\n";
+echo "                'paging': true,\n";
+echo "                'searching': true,\n";
 echo "                'info': false,\n";
 echo "                'order': [[ 0, 'desc' ]]\n";
 echo "              });\n";
