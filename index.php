@@ -58,9 +58,9 @@ echo "             <table id='eventlist' class='table table-dark table-striped t
 
 echo "              <thead>\n";
 echo "                <tr>\n";
-echo "                  <th>Time</th>\n";
-echo "                  <th>Attacker</th>\n";
-echo "                  <th>Victim</th>\n";
+echo "                  <th class='col-3'>Time</th>\n";
+echo "                  <th class='col-4'>Attacker</th>\n";
+echo "                  <th class='col-4'>Victim</th>\n";
 echo "                </tr>\n";
 echo "              </thead>\n";
 
@@ -69,9 +69,9 @@ echo "              <tbody>\n";
 $eList = getEventList ( );
 foreach ( $eList->getArray() as $event ) {
     echo "                <tr>\n";
-    echo "                  <td>".$event->getStamp()."</td>\n";
-    echo "                  <td>".$event->getAttacker()." [+".$event->getPoints()."p]</td>\n";
-    echo "                  <td>".$event->getVictim()." [-".$event->getPoints()."p]</td>\n";
+    echo "                  <td class='col-3'>".$event->getStamp()."</td>\n";
+    echo "                  <td class='col-4'>".$event->getAttacker()." [+".$event->getPoints()."p]</td>\n";
+    echo "                  <td class='col-4'>".$event->getVictim()." [-".$event->getPoints()."p]</td>\n";
     echo "                </tr>\n";
 }
 
