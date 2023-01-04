@@ -87,7 +87,7 @@ echo "            <table id='userlist' class='table table-dark table-striped tab
 echo "              <thead>\n";
 echo "                <tr>\n";
 echo "                  <th class='col-1'>Rank</th>\n";
-echo "                  <th class='col-6'>Name</th>\n";
+echo "                  <th class='col-4'>Name</th>\n";
 echo "                  <th class='col-2'>Points</th>\n";
 echo "                </tr>\n";
 echo "              </thead>\n";
@@ -99,7 +99,7 @@ $index = 0;
 foreach ( $uList->getArray() as $user ) {
     echo "                <tr>\n";
     echo "                  <td class='col-1'>#".++$index."</td>\n";
-    echo "                  <td class='col-6'>".$user->getName()."</td>\n";
+    echo "                  <td class='col-4'>".$user->getName()."</td>\n";
     echo "                  <td class='col-2'>".$user->getPoints()."</td>\n";
     echo "                </tr>\n";
 }
