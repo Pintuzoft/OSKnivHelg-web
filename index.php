@@ -176,7 +176,7 @@ echo "    <script type='text/javascript' src='https://cdn.datatables.net/1.13.1/
 echo "    <script type='text/javascript'>\n";
 echo "            $(document).ready(function() {\n";
 echo "              $('#eventlist').DataTable({\n";
-echo "                'paging': true,\n";
+echo "                'paging': false,\n";
 echo "                'searching': true,\n";
 echo "                'info': false,\n";
 echo "                'order': [[ 0, 'desc' ]]\n";
