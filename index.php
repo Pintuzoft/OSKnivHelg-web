@@ -10,8 +10,6 @@ include_once 'class/functions.php';
 include_once 'class/event.php';
 include_once 'class/user.php';
 
-
-
 echo "<html>\n";
 
 echo "  <head>\n";
@@ -27,7 +25,7 @@ echo "    <link rel='stylesheet' type='text/css' href='https://cdn.datatables.ne
 
 echo "  </head>\n";
 
-echo "  <body>\n";
+echo "  <body style='background-color:#282828'>\n";
 
 /* HEADER */
 echo "    <div id='header' class='container-fluid'>\n";
