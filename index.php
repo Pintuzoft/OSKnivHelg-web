@@ -15,7 +15,11 @@ echo "<html>\n";
 echo "  <head>\n";
 echo "    <title>My Title</title>\n";
 echo "    <link rel='stylesheet' type='text/css' href='css/default.css'>\n";
-echo "    <script type='text/javascript' src='js/jquery.js'></script>\n";
+//echo "    <script type='text/javascript' src='js/jquery.js'></script>\n";
+
+/* JQUERY */
+echo "    <script src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous'></script>\n";
+
 
 /* METAREFRESH */
 echo "    <meta http-equiv='refresh' content='60'>\n";
