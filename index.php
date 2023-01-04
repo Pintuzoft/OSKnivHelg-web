@@ -14,7 +14,7 @@ echo "<html>\n";
 
 echo "  <head>\n";
 echo "    <title>My Title</title>\n";
-echo "    <link rel='stylesheet' type='text/css' href='css/main3.css'>\n";
+echo "    <link rel='stylesheet' type='text/css' href='css/default.css'>\n";
 echo "    <script type='text/javascript' src='js/jquery.js'></script>\n";
 
 /* METAREFRESH */
