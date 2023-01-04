@@ -30,6 +30,54 @@ echo "  </head>\n";
 
 echo "  <body style='background-color:#282828; color:#EFEFEF'>\n";
 
+/* USER MODAL POPUP */
+echo "    <div class='modal fade' id='userModal' tabindex='-1' aria-labelledby='userModalLabel' aria-hidden='true'>\n";
+echo "      <div class='modal-dialog'>\n";
+echo "        <div class='modal-content'>\n";
+echo "          <div class='modal-header'>\n";
+echo "            <h5 class='modal-title' id='userModalLabel'>Modal title</h5>\n";
+echo "            <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>\n";
+echo "          </div>\n";
+
+echo "          <div class='modal-body text-center'>\n";
+echo "            <img id='userModalImage' src='images/oldswedes.logo.motto.small.png' alt='My Logo' />\n";
+
+/* USER EVENTS */
+
+echo "            <table id='userModalEventList' class='table table-dark table-striped table-bordered'>\n";
+
+echo "              <thead>\n";
+echo "                <tr>\n";
+echo "                  <th class='col-3'>Time</th>\n";
+echo "                  <th class='col-4'>Attacker</th>\n";
+echo "                  <th class='col-4'>Victim</th>\n";
+echo "                </tr>\n";
+echo "              </thead>\n";
+
+echo "              <tbody>\n";
+
+$ueList = getUserEventList ( );
+foreach ( $ueList->getArray() as $event ) {
+    echo "                <tr>\n";
+    echo "                  <td class='col-3'>".$event->getStamp()."</td>\n";
+    echo "                  <td class='col-4'>".$event->getAttacker()->getName()."</td>\n";
+    echo "                  <td class='col-4'>".$event->getVictim()->getName()."</td>\n";
+    echo "                </tr>\n";
+}
+
+echo "              </tbody>\n";
+echo "            </table>\n";
+echo "          </div>\n";
+
+echo "          <div class='modal-footer'>\n";
+echo "            <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close</button>\n";
+echo "          </div>\n";
+
+echo "        </div>\n";
+echo "      </div>\n";
+echo "    </div>\n";
+
+    
 /* HEADER */
 echo "    <div id='header' class='container-fluid'>\n";
 echo "      <div id='logo'>\n";
@@ -79,6 +127,14 @@ echo "              </tbody>\n";
 echo "            </table>\n";
 echo "          </div>\n";
 
+
+
+
+
+
+
+
+
 /* CONTENT RIGHT */
 echo "          <div id='content-right' class='col col-3'>\n";
 echo "            <h4>Topplista</h4>\n";
@@ -124,9 +180,14 @@ echo "    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/boots
 echo "    <script type='text/javascript' src='https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js'></script>\n";
 echo "    <script type='text/javascript' src='https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js'></script>\n";
 echo "    <script type='text/javascript'>\n";
-echo "      $(document).ready(function() {\n";
-echo "        $('#eventlist').DataTable();\n";
-echo "      });\n";
+echo "            $(document).ready(function() {\n";
+echo "              $('#eventlist').DataTable({\n";
+echo "                'paging': false,\n";
+echo "                'searching': false,\n";
+echo "                'info': false,\n";
+echo "                'order': [[ 0, 'desc' ]]\n";
+echo "              });\n";
+echo "            });\n";
 echo "    </script>\n";
 echo "  </body>\n";
 echo "</html>\n";

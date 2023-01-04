@@ -16,6 +16,20 @@ function getEventList ( ) {
     return $eList;
 }
 
+function getUserEventList ( ) {
+    global $mysql;
+    $ueList = new ArrayList ( );
+    $query = "SELECT stamp,attacker,attackerid,victim,victimid,points FROM event WHERE attackerid = ? OR victimid = ? ORDER BY stamp DESC";
+    $stmt = $mysql->prepare ( $query ) or die ( "Error: " . $mysql->getError ( ) );
+    $stmt->bind_param ( "ss", $_SESSION['steamid'], $_SESSION['steamid'] ) or die ( "Error: " . $mysql->getError ( ) );
+    $stmt->execute ( ) or die ( "Error: " . $mysql->getError ( ) );
+    $stmt->store_result ( );
+    $stmt->bind_result ( $stamp, $attacker, $attackerid, $victim, $victimid, $points ) or die ( "Error: " . $mysql->getError ( ) );
+    while ( $stmt->fetch ( ) ) {
+        $ueList->add ( new Event ( $stamp, $attacker, $attackerid, $victim, $victimid, $points ) );
+    }
+    return $ueList;
+}
 
 function getUserListSorted ( ) {
     global $mysql;
