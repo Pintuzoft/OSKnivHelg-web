@@ -88,7 +88,7 @@ echo "              <thead>\n";
 echo "                <tr>\n";
 echo "                  <th class='col-1'>Rank</th>\n";
 echo "                  <th>Name</th>\n";
-echo "                  <th>Points</th>\n";
+echo "                  <th class='col-2'>Points</th>\n";
 echo "                </tr>\n";
 echo "              </thead>\n";
 
@@ -98,9 +98,9 @@ $uList = getUserListSorted ( );
 $index = 0;
 foreach ( $uList->getArray() as $user ) {
     echo "                <tr>\n";
-    echo "                  <td class='col-1>#".++$index."</td>\n";
+    echo "                  <td class='col-1'>#".++$index."</td>\n";
     echo "                  <td>".$user->getName()."</td>\n";
-    echo "                  <td>".$user->getPoints()."</td>\n";
+    echo "                  <td class='col-2'>".$user->getPoints()."</td>\n";
     echo "                </tr>\n";
 }
 
