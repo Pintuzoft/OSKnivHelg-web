@@ -14,8 +14,11 @@ echo "<html>\n";
 
 echo "  <head>\n";
 echo "    <title>My Title</title>\n";
-echo "    <link rel='stylesheet' type='text/css' href='css/main.css'>\n";
+echo "    <link rel='stylesheet' type='text/css' href='css/main3.css'>\n";
 echo "    <script type='text/javascript' src='js/jquery.js'></script>\n";
+
+/* METAREFRESH */
+echo "    <meta http-equiv='refresh' content='60'>\n";
 
 /* BOOTSTRAP */
 echo "    <link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css'>\n";
@@ -38,19 +41,19 @@ echo "    </div>\n";
 /* CONTENT LEFT*/
 echo "    <div id='content' class='container-fluid'>\n";
 echo "      <div id='content-main' class='container'>\n";
-echo "        <h1>Knivhelg - Kniva en Admin!</h1>\n";
+echo "        <h2>Knivhelg - Kniva en Admin!</h2>\n";
 
 echo "        <div id='content-main-inner' class='row'>\n";
 echo "          <div id='content-left' class='col col-2'>\n";
-echo "              <h2>Regler:</h2>\n";
+echo "              <h4>Poäng:</h4>\n";
 echo "              <ul>\n";
-echo "                  <li>10p - knivad/kniva - admin</li>\n";
-echo "                  <li>5p - knivad/kniva - spelare</li>\n";
+echo "                  <li>10p - admin</li>\n";
+echo "                  <li>5p - spelare</li>\n";
 echo "              </ul>\n";
 echo "          </div>\n";
 
 echo "          <div id='content-middle' class='col col-5'>\n";
-echo "            <h2>Senaste händelserna</h2>\n";
+echo "            <h4>Senaste händelserna</h4>\n";
 echo "             <table id='eventlist' class='table table-dark table-striped table-bordered'>\n";
 
 echo "              <thead>\n";
@@ -78,12 +81,12 @@ echo "          </div>\n";
 
 /* CONTENT RIGHT */
 echo "          <div id='content-right' class='col col-4'>\n";
-echo "            <h2>Topplista</h2>\n";
+echo "            <h4>Topplista</h4>\n";
 echo "            <table id='userlist' class='table table-dark table-striped table-bordered'>\n";
 
 echo "              <thead>\n";
 echo "                <tr>\n";
-echo "                  <th>Rank</th>\n";
+echo "                  <th class='col-1'>Rank</th>\n";
 echo "                  <th>Name</th>\n";
 echo "                  <th>Points</th>\n";
 echo "                </tr>\n";
@@ -95,7 +98,7 @@ $uList = getUserListSorted ( );
 $index = 0;
 foreach ( $uList->getArray() as $user ) {
     echo "                <tr>\n";
-    echo "                  <td>#".++$index."</td>\n";
+    echo "                  <td class='col-1>#".++$index."</td>\n";
     echo "                  <td>".$user->getName()."</td>\n";
     echo "                  <td>".$user->getPoints()."</td>\n";
     echo "                </tr>\n";
