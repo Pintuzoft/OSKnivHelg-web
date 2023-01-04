@@ -52,7 +52,7 @@ echo "                  <li>5p - spelare</li>\n";
 echo "              </ul>\n";
 echo "          </div>\n";
 
-echo "          <div id='content-middle' class='col col-5'>\n";
+echo "          <div id='content-middle' class='col col-6'>\n";
 echo "            <h4>Senaste händelserna</h4>\n";
 echo "             <table id='eventlist' class='table table-dark table-striped table-bordered'>\n";
 
@@ -80,7 +80,7 @@ echo "            </table>\n";
 echo "          </div>\n";
 
 /* CONTENT RIGHT */
-echo "          <div id='content-right' class='col col-4'>\n";
+echo "          <div id='content-right' class='col col-3'>\n";
 echo "            <h4>Topplista</h4>\n";
 echo "            <table id='userlist' class='table table-dark table-striped table-bordered'>\n";
 
