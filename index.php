@@ -47,7 +47,7 @@ echo "      <div id='content-main' class='container'>\n";
 echo "        <h2 style='color:#fbb204'>Knivhelg - Kniva en Admin!</h2>\n";
 echo "        <p style='font-size:14px'>Admin-Jaktsäsongen på OldSwedes har startat!, Efter Jul och nyår har våra admins blivit fullproppade med mat och godsaker, så det är dags att få dem att springa av sig lite :)<br>\n";
 echo "        dock är det enda sättet att få tyst på dem odågorna att kniva dem i ryggen :D Som belöning får ni 10 poäng per admin, men ni får också 5p för andra spelare<br>\n";
-echo "        Notera att admins kan få för sig att kniva tillbaka och då förlorar ni 10 poäng, eller 5p om ni knivas av andra spelare</p>\n";
+echo "        Notera att admins kan få för sig att kniva tillbaka :)</p>\n";
 echo "        <p style='font-size:14px'>Lycka till!</p>\n";
 echo "        <p style='font-size:14px'>(Notera att detta är i beta och det kan därför finnas buggar)</p>\n";
 
