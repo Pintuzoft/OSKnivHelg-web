@@ -32,19 +32,7 @@ echo "  </head>\n";
 
 echo "  <body style='background-color:#282828; color:#EFEFEF'>\n";
 
-/* USER MODAL POPUP */
-echo "    <div class='modal fade' id='userModal' tabindex='-1' aria-labelledby='userModalLabel' aria-hidden='true'>\n";
-echo "      <div class='modal-dialog'>\n";
-echo "        <div class='modal-content'>\n";
-echo "          <div class='modal-header'>\n";
-echo "            <h5 class='modal-title' id='userModalLabel'>Modal title</h5>\n";
-echo "            <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>\n";
-echo "          </div>\n";
-
-echo "          <div class='modal-body text-center'>\n";
-echo "            <img id='userModalImage' src='images/oldswedes.logo.motto.small.png' alt='My Logo' />\n";
-
-   
+  
 /* HEADER */
 echo "    <div id='header' class='container-fluid'>\n";
 echo "      <div id='logo'>\n";
