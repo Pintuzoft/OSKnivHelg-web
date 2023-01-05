@@ -20,7 +20,7 @@ echo "    <link rel='stylesheet' type='text/css' href='css/default.css'>\n";
 echo "    <script src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous'></script>\n";
 
 /* METAREFRESH */
-echo "    <meta http-equiv='refresh' content='300'>\n";
+echo "    <meta http-equiv='refresh' content='120'>\n";
 
 /* BOOTSTRAP */
 echo "    <link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css'>\n";
