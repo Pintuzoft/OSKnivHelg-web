@@ -52,7 +52,7 @@ echo "        <p>Lycka till!</p>\n";
 
 echo "        <div id='content-main-inner' class='row'>\n";
 echo "          <div id='content-left' class='col col-2'>\n";
-echo "              <h4 style='#fbb204'>Poäng:</h4>\n";
+echo "              <h4 style='color:#fbb204'>Poäng:</h4>\n";
 echo "              <ul>\n";
 echo "                  <li>10p - admin</li>\n";
 echo "                  <li>5p - spelare</li>\n";
@@ -60,7 +60,7 @@ echo "              </ul>\n";
 echo "          </div>\n";
 
 echo "          <div id='content-middle' class='col col-6'>\n";
-echo "            <h4 style='#fbb204'>Senaste händelserna</h4>\n";
+echo "            <h4 style='color:#fbb204'>Senaste händelserna</h4>\n";
 echo "             <table id='eventlist' class='table table-dark table-striped table-bordered'>\n";
 
 echo "              <thead>\n";
@@ -88,7 +88,7 @@ echo "          </div>\n";
 
 /* CONTENT RIGHT */
 echo "          <div id='content-right' class='col col-3'>\n";
-echo "            <h4 style='#fbb204'>Topplista</h4>\n";
+echo "            <h4 style='color:#fbb204'>Topplista</h4>\n";
 echo "            <table id='userlist' class='table table-dark table-striped table-bordered'>\n";
 
 echo "              <thead>\n";
