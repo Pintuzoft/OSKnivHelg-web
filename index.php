@@ -44,7 +44,7 @@ echo "    </div>\n";
 /* CONTENT LEFT*/
 echo "    <div id='content' class='container-fluid'>\n";
 echo "      <div id='content-main' class='container'>\n";
-echo "        <h2>Knivhelg - Kniva en Admin!</h2>\n";
+echo "        <h2 style='#fbb204'>Knivhelg - Kniva en Admin!</h2>\n";
 echo "        <p>Admin-Jaktsäsongen på har startat!, enda sättet att få tyst på dem odågorna är att kniva dem i ryggen :D<br>\n";
 echo "        Som belöning får ni 10 poäng per admin, men ni får också 5p för andra spelare<br>\n";
 echo "        Notera att admins kan få för sig att kniva tillbaka och då förlorar ni 10 poäng, eller 5p om ni knivas av andra spelare</p>\n";
@@ -52,7 +52,7 @@ echo "        <p>Lycka till!</p>\n";
 
 echo "        <div id='content-main-inner' class='row'>\n";
 echo "          <div id='content-left' class='col col-2'>\n";
-echo "              <h4>Poäng:</h4>\n";
+echo "              <h4 style='#fbb204'>Poäng:</h4>\n";
 echo "              <ul>\n";
 echo "                  <li>10p - admin</li>\n";
 echo "                  <li>5p - spelare</li>\n";
@@ -60,7 +60,7 @@ echo "              </ul>\n";
 echo "          </div>\n";
 
 echo "          <div id='content-middle' class='col col-6'>\n";
-echo "            <h4>Senaste händelserna</h4>\n";
+echo "            <h4 style='#fbb204'>Senaste händelserna</h4>\n";
 echo "             <table id='eventlist' class='table table-dark table-striped table-bordered'>\n";
 
 echo "              <thead>\n";
@@ -88,7 +88,7 @@ echo "          </div>\n";
 
 /* CONTENT RIGHT */
 echo "          <div id='content-right' class='col col-3'>\n";
-echo "            <h4>Topplista</h4>\n";
+echo "            <h4 style='#fbb204'>Topplista</h4>\n";
 echo "            <table id='userlist' class='table table-dark table-striped table-bordered'>\n";
 
 echo "              <thead>\n";
