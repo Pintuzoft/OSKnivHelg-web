@@ -44,42 +44,7 @@ echo "          </div>\n";
 echo "          <div class='modal-body text-center'>\n";
 echo "            <img id='userModalImage' src='images/oldswedes.logo.motto.small.png' alt='My Logo' />\n";
 
-/* USER EVENTS */
-
-echo "            <table id='userModalEventList' class='table table-dark table-striped table-bordered'>\n";
-
-echo "              <thead>\n";
-echo "                <tr>\n";
-echo "                  <th class='col-3'>Time</th>\n";
-echo "                  <th class='col-4'>Attacker</th>\n";
-echo "                  <th class='col-4'>Victim</th>\n";
-echo "                </tr>\n";
-echo "              </thead>\n";
-
-echo "              <tbody>\n";
-
-$ueList = getUserEventList ( );
-foreach ( $ueList->getArray() as $event ) {
-    echo "                <tr>\n";
-    echo "                  <td class='col-3'>".$event->getStamp()."</td>\n";
-    echo "                  <td class='col-4'>".$event->getAttacker()->getName()."</td>\n";
-    echo "                  <td class='col-4'>".$event->getVictim()->getName()."</td>\n";
-    echo "                </tr>\n";
-}
-
-echo "              </tbody>\n";
-echo "            </table>\n";
-echo "          </div>\n";
-
-echo "          <div class='modal-footer'>\n";
-echo "            <button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>Close</button>\n";
-echo "          </div>\n";
-
-echo "        </div>\n";
-echo "      </div>\n";
-echo "    </div>\n";
-
-    
+   
 /* HEADER */
 echo "    <div id='header' class='container-fluid'>\n";
 echo "      <div id='logo'>\n";
@@ -92,6 +57,10 @@ echo "    </div>\n";
 echo "    <div id='content' class='container-fluid'>\n";
 echo "      <div id='content-main' class='container'>\n";
 echo "        <h2>Knivhelg - Kniva en Admin!</h2>\n";
+echo "        <p>Admin-Jaktsäsongen på har startat!, enda sättet att få tyst på dem odågorna är att kniva dem i ryggen :D</p>\n";
+echo "        <p>Som belöning får ni 10 poäng per admin, men ni får också 5p för andra spelare</p>\n";
+echo "        <p>Notera att admins kan få för sig att kniva tillbaka och då förlorar ni 10 poäng, eller 5p om ni knivas av andra spelare</p>\n";
+echo "        <p>Lycka till!</p>\n";
 
 echo "        <div id='content-main-inner' class='row'>\n";
 echo "          <div id='content-left' class='col col-2'>\n";
