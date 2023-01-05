@@ -13,7 +13,7 @@ include_once 'class/user.php';
 echo "<html>\n";
 
 echo "  <head>\n";
-echo "    <title>My Title</title>\n";
+echo "    <title>Knivhelg - Kniva en Admin!</title>\n";
 echo "    <link rel='stylesheet' type='text/css' href='css/default.css'>\n";
 
 /* JQUERY */
