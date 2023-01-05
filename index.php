@@ -49,6 +49,7 @@ echo "        <p>Admin-Jaktsäsongen på OldSwedes har startat!, enda sättet at
 echo "        Som belöning får ni 10 poäng per admin, men ni får också 5p för andra spelare<br>\n";
 echo "        Notera att admins kan få för sig att kniva tillbaka och då förlorar ni 10 poäng, eller 5p om ni knivas av andra spelare</p>\n";
 echo "        <p>Lycka till!</p>\n";
+echo "        <p>(Notera att detta är i beta och det kan därför finnas buggar)\n";
 
 echo "        <div id='content-main-inner' class='row'>\n";
 echo "          <div id='content-left' class='col col-2'>\n";
