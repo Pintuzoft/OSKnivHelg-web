@@ -45,9 +45,9 @@ echo "    </div>\n";
 echo "    <div id='content' class='container-fluid'>\n";
 echo "      <div id='content-main' class='container'>\n";
 echo "        <h2>Knivhelg - Kniva en Admin!</h2>\n";
-echo "        <p>Admin-Jaktsäsongen på har startat!, enda sättet att få tyst på dem odågorna är att kniva dem i ryggen :D</p>\n";
-echo "        <p>Som belöning får ni 10 poäng per admin, men ni får också 5p för andra spelare</p>\n";
-echo "        <p>Notera att admins kan få för sig att kniva tillbaka och då förlorar ni 10 poäng, eller 5p om ni knivas av andra spelare</p>\n";
+echo "        <p>Admin-Jaktsäsongen på har startat!, enda sättet att få tyst på dem odågorna är att kniva dem i ryggen :D<br>\n";
+echo "        Som belöning får ni 10 poäng per admin, men ni får också 5p för andra spelare<br>\n";
+echo "        Notera att admins kan få för sig att kniva tillbaka och då förlorar ni 10 poäng, eller 5p om ni knivas av andra spelare</p>\n";
 echo "        <p>Lycka till!</p>\n";
 
 echo "        <div id='content-main-inner' class='row'>\n";
