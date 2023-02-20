@@ -80,7 +80,7 @@ echo "              <tbody>\n";
 
 $eList = getEventList ( );
 foreach ( $eList->getArray() as $event ) {
-    $isTeamKill = ( $event->getType == 1 );
+    $isTeamKill = ( $event->getType() == 1 );
     $rowClass = "";
     if ( $isTeamKill ) {
         $rowClass = "class='red'";
