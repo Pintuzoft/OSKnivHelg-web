@@ -66,9 +66,9 @@ echo "          </div>\n";
 
 echo "          <div id='content-middle' class='col col-6'>\n";
 echo "            <h4 style='color:#fbb204'>Senaste händelserna</h4>\n";
-echo "             <table id='eventlist' class='table table-dark table-striped table-bordered'>\n";
+echo "             <table id='eventlist' class='table table-bordered' style='background-color: #FAFAFA;'>\n";
 
-echo "              <thead>\n";
+echo "              <thead class='table-dark'>\n";
 echo "                <tr>\n";
 echo "                  <th class='col-3'>Time</th>\n";
 echo "                  <th class='col-4'>Attacker</th>\n";
@@ -83,12 +83,17 @@ foreach ( $eList->getArray() as $event ) {
     $isTeamKill = ( $event->getType() == 1 );
     $rowClass = "";
     if ( $isTeamKill ) {
-        $rowClass = "class='red'";
+        $rowClass = "class='table-danger'";
     }
     echo "                <tr ".$rowClass.">\n";
     echo "                  <td class='col-3'>".$event->getStamp()."</td>\n";
-    echo "                  <td class='col-4'>".$event->getAttacker()." [+".$event->getPoints()."p]</td>\n";
-    echo "                  <td class='col-4'>".$event->getVictim()." [-".$event->getPoints()."p]</td>\n";
+    if ( $isTeamKill ) {
+        echo "                  <td class='col-4'>".$event->getAttacker()." [-".$event->getPoints()."p]</td>\n";
+        echo "                  <td class='col-4'>".$event->getVictim()." [+".$event->getPoints()."p]</td>\n";    
+    } else {
+        echo "                  <td class='col-4'>".$event->getAttacker()." [+".$event->getPoints()."p]</td>\n";
+        echo "                  <td class='col-4'>".$event->getVictim()." [-".$event->getPoints()."p]</td>\n";    
+    }
     echo "                </tr>\n";
 }
 
