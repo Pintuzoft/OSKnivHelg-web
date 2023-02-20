@@ -92,7 +92,7 @@ foreach ( $eList->getArray() as $event ) {
         echo "                  <td class='col-4'>".$event->getVictim()." [+".$event->getPoints()."p]</td>\n";    
     } else {
         echo "                  <td class='col-4'>".$event->getAttacker()." [+".$event->getPoints()."p]</td>\n";
-        echo "                  <td class='col-4'>".$event->getVictim()." [-".$event->getPoints()."p]</td>\n";    
+        echo "                  <td class='col-4'>".$event->getVictim()."</td>\n";    
     }
     echo "                </tr>\n";
 }
