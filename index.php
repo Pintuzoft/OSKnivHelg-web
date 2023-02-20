@@ -80,7 +80,11 @@ echo "              <tbody>\n";
 
 $eList = getEventList ( );
 foreach ( $eList->getArray() as $event ) {
-    echo "                <tr>\n";
+    $rowClass = "";
+    if ( $event->getType() == 1 ) {
+        $rowClass = "class='red'";
+    }
+    echo "                <tr ".$rowClass.">\n";
     echo "                  <td class='col-3'>".$event->getStamp()."</td>\n";
     echo "                  <td class='col-4'>".$event->getAttacker()." [+".$event->getPoints()."p]</td>\n";
     echo "                  <td class='col-4'>".$event->getVictim()." [-".$event->getPoints()."p]</td>\n";
