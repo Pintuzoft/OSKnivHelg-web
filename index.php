@@ -104,9 +104,9 @@ echo "          </div>\n";
 /* CONTENT RIGHT */
 echo "          <div id='content-right' class='col col-3'>\n";
 echo "            <h4 style='color:#fbb204'>Topplista</h4>\n";
-echo "            <table id='userlist' class='table table-dark table-striped table-bordered'>\n";
+echo "            <table id='userlist' class='table table-bordered' style='background-color: #FAFAFA;'>\n";
 
-echo "              <thead>\n";
+echo "              <thead class='table-dark '>\n";
 echo "                <tr>\n";
 echo "                  <th class='col-1'>Rank</th>\n";
 echo "                  <th class='col-4'>Name</th>\n";
