@@ -30,7 +30,7 @@ echo "    <link rel='stylesheet' type='text/css' href='https://cdn.datatables.ne
 
 echo "  </head>\n";
 
-echo "  <body style=\"background-image:url('images/csknife.2048.jpg');background-repeat: no-repeat; background-color:#282828; color:#EFEFEF;background-size: 100% auto;\">\n";
+echo "  <body style=\"background-image:url('images/csknife.2048.jpg');background-repeat: no-repeat; background-color:#282828; color:#EFEFEF;background-size: 550px auto;background-position: 0px 420px;\">\n";
 
   
 /* HEADER */
@@ -45,9 +45,8 @@ echo "    </div>\n";
 echo "    <div id='content' class='container-fluid'>\n";
 echo "      <div id='content-main' class='container'>\n";
 echo "        <h2 style='color:#fbb204'>Knivhelg - Kniva en Admin!</h2>\n";
-echo "        <p style='font-size:14px'>Admin-Jaktsäsongen på OldSwedes har startat!, Efter Jul och nyår har våra admins blivit fullproppade med mat och godsaker, så det är dags att få dem att springa av sig lite :)<br>\n";
-echo "        dock är det enda sättet att få tyst på dem odågorna att kniva dem i ryggen :D Som belöning får ni 10 poäng per admin, men ni får också 5p för andra spelare<br>\n";
-echo "        Notera att admins kan få för sig att kniva tillbaka :)</p>\n";
+echo "        <p style='font-size:14px'>Glad Påsk!, eftersom det är Skärtorsdag så tänker vi att vi kör en knivhelg. Vi kör förstås hela påskhelgen :)<p>\n";
+echo "        <p style='font-size:14px'>Inga minuspoäng ges ut längre om man blir knivad, dock får du minus om du lyckas kniva en teammate (TK)</p>\n";
 echo "        <p style='font-size:14px'>Lycka till!</p>\n";
 echo "        <p style='font-size:14px'>(Notera att detta är i beta och det kan därför finnas buggar)</p>\n";
 
