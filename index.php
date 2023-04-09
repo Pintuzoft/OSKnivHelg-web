@@ -86,7 +86,7 @@ foreach ( $eList->getArray() as $event ) {
     if ( $isTeamKill ) {
         $rowClass = "class='table-danger'";
     } else if ( $isInvalidated ) {
-        $rowClass = "class='table-warning'";
+        $rowClass = "class='table-light'";
     }
     echo "                <tr ".$rowClass.">\n";
     echo "                  <td class='col-3'>".$event->getStamp()."</td>\n";
