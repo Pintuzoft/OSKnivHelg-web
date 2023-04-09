@@ -72,6 +72,7 @@ echo "                <tr>\n";
 echo "                  <th class='col-3'>Time</th>\n";
 echo "                  <th class='col-4'>Attacker</th>\n";
 echo "                  <th class='col-4'>Victim</th>\n";
+echo "                  <th class='col-1'>Info</th>\n";
 echo "                </tr>\n";
 echo "              </thead>\n";
 
@@ -95,6 +96,13 @@ foreach ( $eList->getArray() as $event ) {
     } else {
         echo "                  <td class='col-4'>".$event->getAttacker()." [+".$event->getPoints()."p]</td>\n";
         echo "                  <td class='col-4'>".$event->getVictim()."</td>\n";    
+    }
+    if ( $isTeamKill ) {
+        echo "                  <td class='col-1'>TK</td>\n";
+    } else if ( $isInvalidated ) {
+        echo "                  <td class='col-1'>Invalid</td>\n";
+    } else {
+        echo "                  <td class='col-1'></td>\n";
     }
     echo "                </tr>\n";
 }
