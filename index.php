@@ -80,9 +80,12 @@ echo "              <tbody>\n";
 $eList = getEventList ( );
 foreach ( $eList->getArray() as $event ) {
     $isTeamKill = ( $event->getType() == 1 );
+    $isInvalidated = ( $event->getPoints() == 2 );
     $rowClass = "";
     if ( $isTeamKill ) {
         $rowClass = "class='table-danger'";
+    } else if ( $isInvalidated ) {
+        $rowClass = "class='table-warning'";
     }
     echo "                <tr ".$rowClass.">\n";
     echo "                  <td class='col-3'>".$event->getStamp()."</td>\n";
