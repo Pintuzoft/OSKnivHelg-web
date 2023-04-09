@@ -80,7 +80,7 @@ echo "              <tbody>\n";
 $eList = getEventList ( );
 foreach ( $eList->getArray() as $event ) {
     $isTeamKill = ( $event->getType() == 1 );
-    $isInvalidated = ( $event->getPoints() == 2 );
+    $isInvalidated = ( $event->getType() == 2 );
     $rowClass = "";
     if ( $isTeamKill ) {
         $rowClass = "class='table-danger'";
