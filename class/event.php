@@ -1,26 +1,24 @@
 <?php
 
-/* 
+/*
     Class Event
-
-    This class is used to store the information of an event.
+    Stores one knife event. Player IDs are SteamID64 values.
 */
-
 class Event {
     private $stamp;
     private $attacker;
-    private $attackerid;
+    private $attackerSteamId64;
     private $victim;
-    private $victimid;
+    private $victimSteamId64;
     private $points;
     private $type;
 
-    public function __construct($stamp, $attacker, $attackerid, $victim, $victimid, $points, $type) {
+    public function __construct($stamp, $attacker, $attackerSteamId64, $victim, $victimSteamId64, $points, $type) {
         $this->stamp = $stamp;
         $this->attacker = $attacker;
-        $this->attackerid = $attackerid;
+        $this->attackerSteamId64 = $attackerSteamId64;
         $this->victim = $victim;
-        $this->victimid = $victimid;
+        $this->victimSteamId64 = $victimSteamId64;
         $this->points = $points;
         $this->type = $type;
     }
@@ -34,7 +32,11 @@ class Event {
     }
 
     public function getAttackerID() {
-        return $this->attackerid;
+        return $this->attackerSteamId64;
+    }
+
+    public function getAttackerSteamId64() {
+        return $this->attackerSteamId64;
     }
 
     public function getVictim() {
@@ -42,9 +44,13 @@ class Event {
     }
 
     public function getVictimID() {
-        return $this->victimid;
+        return $this->victimSteamId64;
     }
-    
+
+    public function getVictimSteamId64() {
+        return $this->victimSteamId64;
+    }
+
     public function getPoints() {
         return $this->points;
     }
