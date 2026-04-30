@@ -65,7 +65,7 @@ function renderIntro($stats) {
     echo "        <section class='intro-card'>\n";
     echo "          <div>\n";
     echo "            <h2>Kniva en Admin!</h2>\n";
-    echo "            <p>Glad Påsk! Eftersom det är Skärtorsdag kör vi knivhelg hela påskhelgen.</p>\n";
+    echo "            <p>Glad Valborg! Vi kör knivhelg, så vässa kniven och jaga poäng på topplistan.</p>\n";
     echo "            <p>Inga minuspoäng ges om man blir knivad, men teamkill med kniv kostar. Förstås. Det är ju inte välgörenhet heller.</p>\n";
     echo "          </div>\n";
     echo "          <div class='rules-box'>\n";
