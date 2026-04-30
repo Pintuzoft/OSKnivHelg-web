@@ -2,10 +2,27 @@
 include_once 'mysql.php';
 include_once 'arraylist.php';
 
+function kwTable(string $suffix): string {
+    $prefix = 'knivhelg';
+
+    if (isset($GLOBALS['knivhelg_table_prefix']) && is_string($GLOBALS['knivhelg_table_prefix'])) {
+        $prefix = $GLOBALS['knivhelg_table_prefix'];
+    }
+
+    $prefix = preg_replace('/[^a-zA-Z0-9_]/', '', $prefix);
+    $suffix = preg_replace('/[^a-zA-Z0-9_]/', '', $suffix);
+
+    if ($prefix === '') {
+        $prefix = 'knivhelg';
+    }
+
+    return "`{$prefix}_{$suffix}`";
+}
+
 function getEventList() {
     global $mysql;
     $eList = new ArrayList();
-    $query = "SELECT stamp,attacker,attackerid64,victim,victimid64,points,type FROM `event` ORDER BY stamp DESC";
+    $query = "SELECT stamp,attacker,attackerid64,victim,victimid64,points,type FROM " . kwTable('event') . " ORDER BY stamp DESC";
     $stmt = $mysql->prepare($query) or die("Error: " . $mysql->getError());
     $stmt->execute() or die("Error: " . $mysql->getError());
     $stmt->store_result();
@@ -22,7 +39,7 @@ function getEventList() {
 function getUserListSorted() {
     global $mysql;
     $uList = new ArrayList();
-    $query = "SELECT steamid64,name,points FROM userstats ORDER BY points DESC";
+    $query = "SELECT steamid64,name,points FROM " . kwTable('userstats') . " ORDER BY points DESC";
     $stmt = $mysql->prepare($query) or die("Error: " . $mysql->getError());
     $stmt->execute() or die("Error: " . $mysql->getError());
     $stmt->store_result();
@@ -49,7 +66,7 @@ function getDashboardStats() {
         'latest_stamp' => null
     );
 
-    $query = "SELECT COUNT(*), MAX(stamp) FROM `event`";
+    $query = "SELECT COUNT(*), MAX(stamp) FROM " . kwTable('event');
     $stmt = $mysql->prepare($query) or die("Error: " . $mysql->getError());
     $stmt->execute() or die("Error: " . $mysql->getError());
     $stmt->bind_result($totalEvents, $latestStamp) or die("Error: " . $mysql->getError());
@@ -59,7 +76,7 @@ function getDashboardStats() {
     }
     $stmt->close();
 
-    $query = "SELECT COUNT(*), COALESCE(SUM(points), 0) FROM userstats";
+    $query = "SELECT COUNT(*), COALESCE(SUM(points), 0) FROM " . kwTable('userstats');
     $stmt = $mysql->prepare($query) or die("Error: " . $mysql->getError());
     $stmt->execute() or die("Error: " . $mysql->getError());
     $stmt->bind_result($totalPlayers, $totalPoints) or die("Error: " . $mysql->getError());
@@ -69,7 +86,7 @@ function getDashboardStats() {
     }
     $stmt->close();
 
-    $query = "SELECT steamid64,name,points FROM userstats ORDER BY points DESC LIMIT 1";
+    $query = "SELECT steamid64,name,points FROM " . kwTable('userstats') . " ORDER BY points DESC LIMIT 1";
     $stmt = $mysql->prepare($query) or die("Error: " . $mysql->getError());
     $stmt->execute() or die("Error: " . $mysql->getError());
     $stmt->bind_result($topSteamid64, $topName, $topPoints) or die("Error: " . $mysql->getError());
