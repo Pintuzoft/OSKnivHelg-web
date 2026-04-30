@@ -6,7 +6,16 @@ class MySQL {
     private $connection;
 
     public function __construct($host, $user, $password, $database) {
-        $this->connection = new mysqli($host, $user, $password, $database) or die("Error " . mysqli_error($this->mysqli));
+        $this->connection = new mysqli($host, $user, $password, $database);
+
+        if ($this->connection->connect_error) {
+            die("MySQL connection failed: " . $this->connection->connect_error);
+        }
+
+        if (!$this->connection->set_charset('utf8mb4')) {
+            die("MySQL charset error: " . $this->connection->error);
+        }
+
         return $this;
     }
 
@@ -27,9 +36,10 @@ class MySQL {
     }
 
     public function __destruct() {
-        $this->connection->close();
+        if ($this->connection instanceof mysqli) {
+            $this->connection->close();
+        }
     }
-
 }
 
 ?>
