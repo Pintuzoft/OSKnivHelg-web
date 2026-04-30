@@ -2,7 +2,7 @@
 include_once 'mysql.php';
 include_once 'arraylist.php';
 
-function kwTable(string $suffix): string {
+function kwTable($suffix) {
     $prefix = 'knivhelg';
 
     if (isset($GLOBALS['knivhelg_table_prefix']) && is_string($GLOBALS['knivhelg_table_prefix'])) {
